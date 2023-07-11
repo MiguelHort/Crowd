@@ -79,13 +79,24 @@ header {
     background-color: #FBBC05;
 }
 
-#imagem-principal {}
-
-#imagem-principal img {
+#imagem-principal {
+    background-image: url(imagem-principal.png);
     width: 100%;
+    height: 670px;
+}
+
+#imagem-principal h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #pesquisa {
+    position: relative;
+    top: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
