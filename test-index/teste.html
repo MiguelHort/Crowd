@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos CSS para o campo de entrada */
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    /* Estilos CSS para o botão de confirmação */
+    .confirmar-botao {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1 id="frase">Esta é a frase padrão.</h1>
+  </div>
+  <button class="alterar-botao" onclick="alterarFrase()">Alterar Frase</button>
+
+  <script>
+    function alterarFrase() {
+      var container = document.getElementById("container");
+      var frase = document.getElementById("frase");
+
+      // Remove o elemento da frase atual
+      container.removeChild(frase);
+
+      // Cria um novo elemento de entrada de texto
+      var input = document.createElement("input");
+      input.type = "text";
+      input.id = "novaFrase";
+      input.placeholder = "Digite a nova frase";
+      container.appendChild(input);
+
+      // Cria um novo botão para confirmar a alteração
+      var botaoConfirmar = document.createElement("button");
+      botaoConfirmar.innerText = "Confirmar";
+      botaoConfirmar.className = "confirmar-botao";
+      botaoConfirmar.onclick = confirmarAlteracao;
+      container.appendChild(botaoConfirmar);
+    }
+
+    function confirmarAlteracao() {
+      var container = document.getElementById("container");
+      var input = document.getElementById("novaFrase");
+      var novaFrase = input.value;
+
+      // Cria um novo elemento de texto com a nova frase
+      var novoTexto = document.createElement("h1");
+      novoTexto.id = "frase";
+      novoTexto.innerText = novaFrase;
+      container.removeChild(input);
+      container.removeChild(document.querySelector("button"));
+      container.appendChild(novoTexto);
+    }
+  </script>
+</body>
+</html>
