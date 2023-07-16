@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário</title>
     <link rel="stylesheet" href="usuario.css">
+    <script src="usuario.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,44 @@
             <img id="usuario" src="/statics/usuario.png" alt="">
 
             <!-- nome -->
-            <p id="nome"> <img class="editar" src="/statics/editar.png" alt="">Victor Hugo Gomes
-            </p>
-            <hr id="linha-nome">
+            <div id="nomediv">
+            <p id="nome">Victor Hugo Gomes</p>
+            <img class="editar" src="/statics/editar.png" alt="">
         </div>
+            <hr id="linha-nome">
+
+            <!-- botão para ver mais -->
+            <div class="container">
+                <div class="button" onclick="toggleExpand()">
+                  <img id="arrow" src="/statics/seta.png">
+                </div>
+                <div class="text expand" id="expandText">
+                   
+                    <!-- email -->
+                    <div id="emaildiv">
+
+                        <img class="icones" src="/statics/email.jpg" alt=""> 
+                        <p id="email">victorhugo@gmail.com</p>
+                        <img class="editar" src="/statics/editar.png" alt="">
+                     </div> 
+                       <hr id="linha-email">
+
+                       <!-- senha -->
+
+                       <div id="senhadiv">
+
+                        <img class="icones" id="olho" src="/statics/olho fechado.png" alt=""> 
+                        <p id="senha">**********</p>
+                        <img class="editar" src="/statics/editar.png" alt="">
+                     </div> 
+                       <hr id="linha-email">
+               
+                    </div>
+              </div>   
+          </div>
+
+
+
 
         <!-- fundo amarelado da tela -->
         <div id="fundo-amarelo">

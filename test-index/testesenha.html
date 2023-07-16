@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 200px;
+
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.password img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.password-text {
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="password" onclick="togglePassword()">
+    <img id="eye" src="/statics/olho fechado.png">
+    <span id="passwordText" class="password-text">********</span>
+    <img id="editIcon" class="edit-icon" src="/statics/editar.png" onclick="editPassword()">
+  </div>
+</div>
+
+<script>
+function togglePassword() {
+  var eye = document.getElementById("eye");
+  var passwordText = document.getElementById("passwordText");
+  
+  if (eye.getAttribute("src") === "/statics/olho fechado.png") {
+    eye.setAttribute("src", "/statics/olho aberto.png");
+    passwordText.textContent = "senha123";
+  } else {
+    eye.setAttribute("src", "/statics/olho fechado.png");
+    passwordText.textContent = "********";
+  }
+}
+
+</script>
+</body>
+</html>
