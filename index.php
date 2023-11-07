@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crowd</title>
-  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
   <header>
     <nav>
-      <a class="logo1" href="/"><img src="/img/logo.png" alt=""></a>
+      <a class="logo1" href="/"><img src="img/logo.png" alt=""></a>
       <div id="junto">
-        <a class="logo2" href="/"><img src="/img/logo-2.png" alt=""></a>
+        <a class="logo2" href="/"><img src="img/logo-2.png" alt=""></a>
         <hr>
         <div class="mobile-menu">
           <div class="line1"></div>
@@ -29,7 +29,7 @@
       </ul>
       <div id="login">
         <a id="entrar">
-          <img src="/img/entrar.png" alt="entrar">
+          <img src="img/entrar.png" alt="entrar">
           <p>ENTRAR</p>
         </a>
         <button id="criar-conta">CRIAR CONTA</button>
@@ -50,19 +50,19 @@
 
       <div id="imagens-populares">
         <div class="local">
-          <a href=""><img src="/img/Fotos/Alexandria/alexandria (1).jpg" alt="alexandria"></a>
+          <a href=""><img src="img/Fotos/Alexandria/alexandria (1).jpg" alt="alexandria"></a>
           <p>Alexandria Burguer</p>
         </div>
         <div class="local">
-          <a href=""><img src="/img/Fotos/Gutbrau/gutbrau (1).jpg" alt="alexandria"></a>
+          <a href=""><img src="img/Fotos/Gutbrau/gutbrau (1).jpg" alt="alexandria"></a>
           <p>Gutbrau</p>
         </div>
         <div class="local">
-          <a href=""><img src="/img/Fotos/Level Café/levelcafe (1).jpg" alt="alexandria"></a>
+          <a href=""><img src="img/Fotos/Level Café/levelcafe (1).jpg" alt="alexandria"></a>
           <p>Level Café</p>
         </div>
         <div class="local">
-          <a href=""><img src="/img/Fotos/Unalome/unalome (1).png" alt="alexandria"></a>
+          <a href=""><img src="img/Fotos/Unalome/unalome (1).png" alt="alexandria"></a>
           <p>Unalome</p>
         </div>
       </div>
@@ -83,8 +83,8 @@
           <a href=""><button>Cadastrar</button></a>
       </div>
       <div id="pessoas">
-        <img id="pessoas1" src="/img/pessoas.png" alt="">
-        <img id="pessoas2" src="/img/pessoas-2.png" alt="">
+        <img id="pessoas1" src="img/pessoas.png" alt="">
+        <img id="pessoas2" src="img/pessoas-2.png" alt="">
       </div>
     </div>
   </section>
@@ -123,7 +123,7 @@
       </a>
       <a class="card" href="#">
         <div class="card__background"
-          style="background-image: url(https://img.freepik.com/fotos-gratis/jovem-beija-seu-homem-lindo-enquanto-jantar-romantico_171337-19116.jpg?w=360&t=st=1686572101~exp=1686572701~hmac=0f05366d1d2d746a1bc35db87ff0925386a289292566d1721108ccf67a781bdc   )">
+          style="background-image: url(https:/img.freepik.com/fotos-gratis/jovem-beija-seu-homem-lindo-enquanto-jantar-romantico_171337-19116.jpg?w=360&t=st=1686572101~exp=1686572701~hmac=0f05366d1d2d746a1bc35db87ff0925386a289292566d1721108ccf67a781bdc   )">
         </div>
         <div class="card__content">
           <h3 class="card__heading">Encontros</h3>
@@ -132,7 +132,7 @@
       </a>
       <a class="card" href="cafes.html">
         <div class="card__background"
-          style="background-image: url(https://img.freepik.com/fotos-gratis/vapores-de-cafe-fresco-na-mesa-de-madeira-fecham-a-ia-generativa_188544-8923.jpg?w=996&t=st=1688213414~exp=1688214014~hmac=70da40012676b3fa38fcd2435a0b06fcbcd7d4ceff73c3300cfccd394ad532f7)">
+          style="background-image: url(https:/img.freepik.com/fotos-gratis/vapores-de-cafe-fresco-na-mesa-de-madeira-fecham-a-ia-generativa_188544-8923.jpg?w=996&t=st=1688213414~exp=1688214014~hmac=70da40012676b3fa38fcd2435a0b06fcbcd7d4ceff73c3300cfccd394ad532f7)">
         </div>
         <div class="card__content">
           <h3 class="card__heading">Cafés</h3>
@@ -141,7 +141,7 @@
       </a>
       <a class="card" href="#">
         <div class="card__background"
-          style="background-image: url(https://img.freepik.com/fotos-gratis/bela-praia-tropical-mar-e-mar-com-palmeira-de-coco-na-hora-do-nascer-do-sol_74190-7454.jpg?w=826&t=st=1688213542~exp=1688214142~hmac=a712a5718216bd22b1f87606d3a42157d9ede813ce745a0a8fa05a1f2cac02c6)">
+          style="background-image: url(https:/img.freepik.com/fotos-gratis/bela-praia-tropical-mar-e-mar-com-palmeira-de-coco-na-hora-do-nascer-do-sol_74190-7454.jpg?w=826&t=st=1688213542~exp=1688214142~hmac=a712a5718216bd22b1f87606d3a42157d9ede813ce745a0a8fa05a1f2cac02c6)">
         </div>
         <div class="card__content">
           <h3 class="card__heading">Praias</h3>
