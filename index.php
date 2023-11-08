@@ -28,11 +28,13 @@
         <li><a href="#">Ajude-nos</a></li>
       </ul>
       <div id="login">
-        <a id="entrar">
+        <a id="entrar" href="html/login-cadastro.html" >
           <img src="img/entrar.png" alt="entrar">
           <p>ENTRAR</p>
         </a>
+        <a href="html/login-cadastro.html">
         <button id="criar-conta">CRIAR CONTA</button>
+      </a>
       </div>
     </nav>
   </header>
@@ -57,15 +59,15 @@
           <p><?php echo $nomengc['nomengc1']; ?></p>
         </div>
         <div class="local">
-          <a href=""><img src="img/Fotos/Gutbrau/gutbrau (1).jpg" alt="alexandria"></a>
+          <a href=""><img src="img/fotos/Gutbrau/gutbrau (1).jpg" alt="alexandria"></a>
           <p><?php echo $nomengc['nomengc2']; ?></p>
         </div>
         <div class="local">
-          <a href=""><img src="img/Fotos/Level Café/levelcafe (1).jpg" alt="alexandria"></a>
+          <a href=""><img src="img/fotos/Level Café/levelcafe (1).jpg" alt="alexandria"></a>
           <p><?php echo $nomengc['nomengc3']; ?></p>
         </div>
         <div class="local">
-          <a href=""><img src="img/Fotos/Unalome/unalome (1).png" alt="alexandria"></a>
+          <a href=""><img src="img/fotos/Unalome/unalome (1).png" alt="alexandria"></a>
           <p><?php echo $nomengc['nomengc4']; ?></p>
         </div>
       </div>
