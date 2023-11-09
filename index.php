@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crowd</title>
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="img/logo-2.png">
 </head>
 
 <body>
@@ -55,7 +56,7 @@
       <div id="imagens-populares">
         <div class="local">
           <!-- <a href=""><img src="<?php echo $nomengc['imagem1']; ?>" alt="alexandria"></a> -->
-          <a href=""><img src="img/fotos/Unalome/unalome (1).png" alt="alexandria"></a>
+          <a href=""><img src="img/fotos/Alexandria/alexandria (1).jpg" alt="alexandria"></a>
           <p><?php echo $nomengc['nomengc1']; ?></p>
         </div>
         <div class="local">

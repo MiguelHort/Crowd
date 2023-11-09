@@ -1,25 +1,99 @@
+#titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#titulos p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+#titulo {
+    margin: 0;
+    color: black;
+    font-size: 40px;
+}
+
+#subtitulo {
+    margin: 0;
+    color: #FBBC05;
+    font-size: 25px;
+}
+
 #dadosDoNegocio form {
     display: flex;
     flex-direction: column;
-}
-
-#dadosDoNegocio form div div {
-    display: flex;
-    flex-direction: column;
-   
-}
-
-#dadosDoNegocio form div {
-    display: flex;
-   
-}
-
-#dadosDoNegocio input {
-    width: 300px;
-    height: 30px;
-    border-radius: 10px;
+    gap: 50px;
 }
 
 #dadosDoNegocio button {
-    width: 650px;
+    width: 400px;
+    height: 40px;
+    font-weight: 600;
+    background-color: #FBBC05;
+    border-radius: 15px;
+}
+
+#dadosDoNegocio button:hover {
+    background-color: #f8ce4f;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+#inputs {
+    display: flex;
+    gap: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+#informacoes {
+    width: 500px;
+    gap: 20px;
+}
+
+#informacoes p {
+    font-size: 30px;
+}
+
+#informacoes input, textarea {
+    border-radius: 5px;
+    border: solid black 2px;
+}
+
+#nomedoseunegocio {
+    width: 300px;
+    height: 40px;
+}
+
+.contato {
+   width: 230px;
+   height: 25px;
+}
+
+#informacoes, #imagens {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-upload {
+    display: inline-block;
+    background: url('../img/addImagens.png') no-repeat;
+    background-size: contain; /* Ajusta o tamanho da imagem para caber no elemento */
+    width: 60px;
+    height: 60px;
+}
+
+.file-upload:hover {
+    background: url('../img/addImagens1.png') no-repeat;
+    background-size: contain;
+}
+
+.upload-input {
+    opacity: 0; /* Torna o input transparente */
+    width: 100%;
+    height: 100%;
 }

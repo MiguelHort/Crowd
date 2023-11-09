@@ -10,37 +10,39 @@
 
 <body>
 
-    <div>
-        <p>O seu negócio e a Crowd juntos!</p>
-        <p>Preencha as informações com tudo que você quer que saibam sobre o seu negócio.</p>
+    <div id="titulos">
+        <p id="titulo">O seu negócio e a<br>Crowd juntos!</p>
+        <p id="subtitulo">Preencha as informações com<br>tudo que você quer que saibam<br>sobre o seu negócio.</p>
     </div>
 
-    <div id="dadosDoNegocio">
-        <form action="" method="post">
-            <div>
-                <div>
+    <section id="dadosDoNegocio">
+        <form action="../database/cadastroLocal.php" method="post" enctype="multipart/form-data">
+            <div id="inputs">
+                <div id="informacoes">
                     <label for="">Nome do seu negocio</label>
-                    <input type="text">
+                    <input name="nomengc" type="text" id="nomedoseunegocio">
                     <label for="">Descrição do estabelecimento</label>
-                    <input type="text">
+                    <textarea name="descricao" id="descricaodoseunegocio" cols="30" rows="10"></textarea>
                     <label for="">CEP</label>
-                    <input type="text">
+                    <input name="cep" type="text" class="contato">
                     <p>Informações de contato</p>
                     <label for="">Telefone</label>
-                    <input type="text">
+                    <input name="telefone" type="tel" class="contato">
                     <label for="">Email</label>
-                    <input type="text">
+                    <input name="email" type="email" class="contato">
                     <label for="">Site</label>
-                    <input type="text">
+                    <input name="site" type="site" class="contato">
                 </div>
-                <div>
-                    <label for="">Imagens do negocio</label>
-                    <input type="file">
+                <div id="imagens">
+                    <label for="file-upload">Adicione imagens do seu negócio</label>
+                    <div class="file-upload">
+                        <input name="pictureInput" type="file" id="file-upload" class="upload-input">
+                    </div>
                 </div>
             </div>
             <button type="submit">Cadastrar</button>
         </form>
-    </div>
+    </section>
 
 </body>
 

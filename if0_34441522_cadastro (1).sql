@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/11/2023 às 03:16
+-- Tempo de geração: 09/11/2023 às 04:12
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -66,9 +66,13 @@ CREATE TABLE `novolocal` (
 
 INSERT INTO `novolocal` (`id_ngc`, `nomengc`, `descricao`, `cep`, `telefone`, `email`, `site`, `pictureInput`) VALUES
 (1, 'Alexandria', 'Hamburgueria do lado do Mueller', '89213555', '4799675156', 'alexandria@gmail.com', 'alexandria.com.br', 'img/Fotos/Gutbrau/gutbrau (1).jpg'),
+(6, 'Bar do seu zé', 'Bar mais top de Joinville', '89213555', '999955987', 'zebar@gmail.com', 'www.zebar.com.br', ''),
 (3, 'Gutbrau', '', '', '', '', '', ''),
 (4, 'Level Café', '', '', '', '', '', ''),
-(5, 'Unalome', '', '', '', '', '', '');
+(5, 'Unalome', '', '', '', '', '', ''),
+(7, 'sdafsdf', 'sdfdsfsd', '89213555', '999955987', 'zebar@gmail.com', 'www.zebar.com.br', '../img/654c4b0c5d366.jpg'),
+(8, 'sdafsdf', 'sdfdsfsd', '89213555', '999955987', 'zebar@gmail.com', 'www.zebar.com.br', '../img/654c4ba66c947.jpg'),
+(9, 'Senai Norte 1', 'Local de aprendizagem industrial.', '89219510', '3441-7700', 'senai@senainorte.com.br', 'www.senainorte.com.br', '../img/654c4dac44912.jpg');
 
 -- --------------------------------------------------------
 
@@ -119,7 +123,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `novolocal`
 --
 ALTER TABLE `novolocal`
-  MODIFY `id_ngc` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_ngc` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
