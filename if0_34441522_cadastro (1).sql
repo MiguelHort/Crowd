@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09/11/2023 às 04:12
+-- Tempo de geração: 10/11/2023 às 04:44
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -72,7 +72,11 @@ INSERT INTO `novolocal` (`id_ngc`, `nomengc`, `descricao`, `cep`, `telefone`, `e
 (5, 'Unalome', '', '', '', '', '', ''),
 (7, 'sdafsdf', 'sdfdsfsd', '89213555', '999955987', 'zebar@gmail.com', 'www.zebar.com.br', '../img/654c4b0c5d366.jpg'),
 (8, 'sdafsdf', 'sdfdsfsd', '89213555', '999955987', 'zebar@gmail.com', 'www.zebar.com.br', '../img/654c4ba66c947.jpg'),
-(9, 'Senai Norte 1', 'Local de aprendizagem industrial.', '89219510', '3441-7700', 'senai@senainorte.com.br', 'www.senainorte.com.br', '../img/654c4dac44912.jpg');
+(9, 'Senai Norte 1', 'Local de aprendizagem industrial.', '89219510', '3441-7700', 'senai@senainorte.com.br', 'www.senainorte.com.br', '../img/654c4dac44912.jpg'),
+(10, 'Senai Norte 1', 'Local de aprendizagem industrial.', '89219510', '3441-7700', 'senai@senainorte.com.br', 'www.senainorte.com.br', '../img/654d7d4218696.jpg'),
+(11, 'Bar do seu zé', 'fgdxfhdxf', '89213555', '999955987', 'zebar@gmail.com', 'www.zejbar.com.br', '../img/654d803b5af40.mp4'),
+(12, 'Bar do seu zé', 'jhpjkhkç', '89213555', '999955987', 'zebar@gmail.com', 'www.zejbar.com.br', '../img/654d8180cb84b.png'),
+(13, 'Bar do seu zé', 'gcnbfxgn', '89213555', '3441-7700', 'zebar@gmail.com', 'www.senainorte.com.br', '../img/654d821f30922.png');
 
 -- --------------------------------------------------------
 
@@ -123,7 +127,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `novolocal`
 --
 ALTER TABLE `novolocal`
-  MODIFY `id_ngc` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_ngc` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
