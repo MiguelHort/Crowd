@@ -10,20 +10,20 @@
 
 <body>
 
-    <header>
-            <a class="logo1" href="/"><img src="../img/logo1.png" alt=""></a>
-            <div id="pesquisa">
-                <input type="text" placeholder="Vamos aonde?">
-            </div>
-            <div id="login">
-                <a id="entrar" href="html/login-cadastro.html">
-                    <img src="../img/entrar.png" alt="entrar">
-                    <p>ENTRAR</p>
-                </a>
-                <a href="html/login-cadastro.html">
-                    <button id="criar-conta">CRIAR CONTA</button>
-                </a>
-            </div>
+    <header id="header">
+        <a class="logo1" href="/"><img src="../img/logo1.png" alt=""></a>
+        <div id="pesquisa">
+            <input type="text" placeholder="Vamos aonde?">
+        </div>
+        <div id="login">
+            <a id="entrar" href="html/login-cadastro.html">
+                <img src="../img/entrar.png" alt="entrar">
+                <p>ENTRAR</p>
+            </a>
+            <a href="html/login-cadastro.html">
+                <button id="criar-conta">CRIAR CONTA</button>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -42,15 +42,102 @@
 
         <section id="informacoes">
 
-            <article id="informacoesIniciais">
-                <h1>Alexandria Burguer</h1>
-                <P>Primeira hamburgueria de Joinville a trazer a opção de rodízio de hamburguers.</P>
-            </article>
+            <div id="corpoEsquerdo">
+                <article id="opcoes">
+                    <button class="categoria">Mais populares 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 24" fill="none">
+                            <path d="M2.79253 21.8231C3.83481 22.6963 5.06917 23.31 6.39443 23.614C6.52125 23.6555 6.60659 23.4896 6.52125 23.4066C3.68264 20.6984 5.24239 17.7673 6.39443 16.4458C7.21579 15.5023 8.38561 13.9485 8.30027 11.8649C8.30027 11.6563 8.51361 11.4892 8.68192 11.6148C10.2926 12.448 11.3937 14.2816 11.69 15.7809C12.157 15.3234 12.3265 14.6146 12.3265 13.99C12.3265 13.7814 12.5801 13.6143 12.7923 13.7814C14.3177 15.1563 16.9441 19.8225 12.7069 23.4884C12.6228 23.5725 12.7069 23.7397 12.7923 23.6982C14.0771 23.3614 15.2853 22.7812 16.3515 21.9891C23.2578 16.6556 18.7658 7.19748 15.8419 4.07323C15.4614 3.69751 14.7834 3.94759 14.7834 4.48924C14.7408 5.6152 14.4018 6.86443 13.5129 7.69764C12.8349 4.86495 10.5759 1.64707 7.35565 0.0636109C6.93252 -0.144989 6.42406 0.18806 6.46673 0.646741C6.5497 4.52243 4.02161 6.99006 1.81828 10.1985C-0.131414 13.0726 -1.40197 18.3647 2.79253 21.8231Z" fill="black"/>
+                          </svg>
+                    </button>
+                    <button id="compartilhar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 34 34" fill="none">
+                            <path d="M11.9859 16.1717L14.5136 29.7578C14.9908 32.3228 18.2498 32.8333 19.4096 30.5246L31.6894 6.0802C32.1645 5.1345 32.0653 4.08931 31.5902 3.29355M11.9859 16.1717L2.80484 6.77264C1.10902 5.03654 2.27117 2 4.63145 2H29.3702C30.3383 2 31.136 2.53279 31.5902 3.29355M11.9859 16.1717L31.5902 3.29355M31.5902 3.29355L31.7615 3.18097" stroke="black" stroke-width="3"/ fill="white">
+                          </svg>
+                    </button>
+                </article>
+                <article id="informacoesIniciais">
+                    <h1>Alexandria Burguer</h1>
+                    <P>Primeira hamburgueria de Joinville a trazer a opção de rodízio de hamburguers.</P>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="37" viewBox="0 0 40 37" fill="none">
+                            <path
+                                d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"
+                                fill="#FBBC05" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="37" viewBox="0 0 40 37"
+                            fill="none">
+                            <path
+                                d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"
+                                fill="#FBBC05" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="37" viewBox="0 0 40 37"
+                            fill="none">
+                            <path
+                                d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"
+                                fill="#FBBC05" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="37" viewBox="0 0 40 37"
+                            fill="none">
+                            <path
+                                d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"
+                                fill="#FBBC05" />
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="37" viewBox="0 0 40 37"
+                            fill="none">
+                            <path
+                                d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"
+                                fill="#FBBC05" />
+                        </svg>
+                    </div>
+                </article>
+
+                <hr>
+                
 
 
+
+            </div>
+
+            <div id="corpoDireito">
+                <aside id="sobreEstabelecimento">
+                    <h1>Sobre o estabelimento</h1>
+                    <p>5.0 Incrivel</p>
+                    <hr>
+                    <h2>Recursos</h2>
+                    <ul>
+                        <li>Internet gratuita</li>
+                        <li>Lanches e porções</li>
+                        <li>Estacionamento gratís</li>
+                    </ul>
+                </aside>
+            </div>
         </section>
 
+        <footer>
+            <p>By: Miguel Hort</p>
+        </footer>
+
+
     </main>
+
+    <script>
+
+        window.onscroll = function () {
+            var sobreEstabelecimento = document.getElementById('sobreEstabelecimento');
+            var header = document.getElementById('header');
+            if (window.pageYOffset > 360) {
+                header.style.position = 'fixed';
+                header.style.top = '0px';
+                header.style.width = '100%';
+                sobreEstabelecimento.style.position = 'fixed';
+                sobreEstabelecimento.style.top = '90px';
+                sobreEstabelecimento.style.width = '338px';
+
+            } else {
+                header.style.position = '';
+                sobreEstabelecimento.style.position = '';
+                sobreEstabelecimento.style.width = '78%';
+            }
+        };
+
+    </script>
+
 </body>
 
 </html>
