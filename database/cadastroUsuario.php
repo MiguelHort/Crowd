@@ -48,10 +48,11 @@ include("conexao.php");
 
 // Recebe os valores
 $nome = mysqli_real_escape_string($conexao, trim($_POST['nome']));
+$telefone = mysqli_real_escape_string($conexao, trim($_POST['celular'])); //telefone
 $email = mysqli_real_escape_string($conexao, trim($_POST['email']));
-$telefone = mysqli_real_escape_string($conexao, trim($_POST['telefone']));
-$cidade = mysqli_real_escape_string($conexao, trim($_POST['cidade']));
 $cep = mysqli_real_escape_string($conexao, trim($_POST['cep']));
+
+// $cidade = mysqli_real_escape_string($conexao, trim($_POST['cidade']));
 $senha = mysqli_real_escape_string($conexao, trim($_POST['senha']));
 $seguranca = password_hash($senha, PASSWORD_DEFAULT);
 
@@ -97,7 +98,7 @@ if ($_SESSION['usuario_existe_nome']) {
 }
 
 // Insere os valores no banco
-$sql = "INSERT INTO usuarios (nome,email,telefone,cidade,cep,senha) 
+$sql = "INSERT INTO usuarios (nome,email,celular,cep,senha) 
 VALUES ('$nome', '$email', '$telefone', '$cidade', '$cep', '$seguranca')";
 
 // Executa se for verdadeiro
