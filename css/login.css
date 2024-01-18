@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'nats';
+    src: url('../fonts/NATS-Regular.ttf') format('ttf');
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header div {
+    width: 90%;
+    max-width: 1050px;
+}
+
+header img {
+    width: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 1050px;
+    height: 90vh;
+    background-image: url('../img/celularFundo.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+section h1 {
+    color: white;
+    font-family: 'nats', fallback, sans-serif;
+}
+
+section h2 {
+    color: #FBBC05;
+    font-family: "Inter", sans-serif;
+}
+
+section p {
+    color: #838383;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#inputs input {
+    border-radius: 10px;
+}

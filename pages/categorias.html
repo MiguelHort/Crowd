@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="../css/categorias.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="../img/logo1.png" alt="">
+            </div>
+            <div id="pesquisa">
+                <input type="text" placeholder="Vamos aonde?">
+            </div>
+            <div id="login">
+                <a id="entrar" href="html/login-cadastro.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path
+                            d="M13 14V12.6667C13 11.9594 12.7629 11.2811 12.341 10.781C11.919 10.281 11.3467 10 10.75 10H6.25C5.65326 10 5.08097 10.281 4.65901 10.781C4.23705 11.2811 4 11.9594 4 12.6667V14"
+                            stroke="#FBBC05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8.5 7C9.88071 7 11 5.88071 11 4.5C11 3.11929 9.88071 2 8.5 2C7.11929 2 6 3.11929 6 4.5C6 5.88071 7.11929 7 8.5 7Z"
+                            stroke="#FBBC05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>ENTRAR</p>
+                </a>
+                <a href="html/login-cadastro.html" id="criarConta">CRIAR CONTA</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Restaurantes">
+            <button class="carousel-arrow carousel-arrow--prev" onclick="handleCarouselMove(false)">
+                &#8249;
+            </button>
+            <article id="categoria">
+                <div id="titulo">
+                    <h1>Restaurantes</h1>
+                </div>
+                <div id="carrossel">
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Alexandria/alexandria (1).jpg" alt="">
+                        <p>Alexandria</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Gutbrau/gutbrau (1).jpg" alt="">
+                        <p>Gutbrau</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Level Café/levelcafe (1).jpg" alt="">
+                        <p>level Café</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Unalome/unalome (1).png" alt="">
+                        <p>Unalome</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Unalome/unalome (1).png" alt="">
+                        <p>Alexandria</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Gutbrau/gutbrau (1).jpg" alt="">
+                        <p>Alexandria</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Level Café/levelcafe (1).jpg" alt="">
+                        <p>Alexandria</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Unalome/unalome (1).png" alt="">
+                        <p>Alexandria</p>
+                    </a>
+                    <a href="" class="imagens">
+                        <img src="../img/fotos/Unalome/unalome (1).png" alt="">
+                        <p>Alexandria</p>
+                    </a>
+                </div>
+            </article>
+            <button class="carousel-arrow carousel-arrow--next" onclick="handleCarouselMove()">
+                &#8250;
+            </button>
+        </section>
+    </main>
+
+    <script>
+        const carousel = document.getElementById("carrossel");
+        const slide = document.querySelector(".imagens");
+
+        function handleCarouselMove(positive = true) {
+            const slideWidth = slide.clientWidth;
+            carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
+        }
+    </script>
+
+</body>
+
+</html>
