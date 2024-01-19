@@ -1,6 +1,12 @@
 @font-face {
-    font-family: 'nats';
-    src: url('../fonts/NATS-Regular.ttf') format('ttf');
+    font-family: natscrowd;
+    src: url(../fonts/nats.ttf)
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
 }
 
 body {
@@ -10,7 +16,9 @@ body {
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100px;
 }
 
 header div {
@@ -30,11 +38,10 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 50%;
-    max-width: 1050px;
-    height: 90vh;
+    gap: 10px;
+    width: 700px;
+    height: 600px;
     background-image: url('../img/celularFundo.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -43,7 +50,9 @@ section {
 
 section h1 {
     color: white;
-    font-family: 'nats', fallback, sans-serif;
+    font-family: natscrowd;
+    font-weight: 100;
+    font-size: 60px;
 }
 
 section h2 {
@@ -53,14 +62,72 @@ section h2 {
 
 section p {
     color: #838383;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+section p:first-of-type {
+    font-size: 16px;
 }
 
 #inputs {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 #inputs input {
+    width: 230px;
+    height: 30px;
+    border-radius: 35px;
+    background: none;
+    border: solid white 2px;
+    padding-left: 15px;
+    color: white;
+}
+
+#inputs input:focus {
+    outline: none;
+}
+
+#inputs input:focus::placeholder {
+    color: transparent;
+    background: none;
+}
+
+#email::placeholder {
+    color: white;
+    background-image: url("../img/email1.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.5em;
+}
+
+#senha::placeholder {
+    color: white;
+    background-image: url("../img/cadeado.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.5em;
+}
+
+section button {
+    width: 245px;
+    height: 35px;
+    margin: 20px 0px 10px 0px;
+    background-color: #FBBC05;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
     border-radius: 10px;
+    border: none;
+}
+
+section p a {
+    color: white;
 }
