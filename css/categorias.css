@@ -78,7 +78,7 @@ main {
     padding: 50px;
 }
 
-#Restaurantes {
+#restaurantes1, #restaurantes2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,7 @@ main {
     width: 100%;
 }
 
-#Restaurantes h1 {
+#restaurantes1 h1, #restaurantes2 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: black;
