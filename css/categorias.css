@@ -102,7 +102,7 @@ main {
     margin: 20px 0px 20px 0px;
 }
 
-#carrossel {
+#carrossel, #carrossel1 {
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: smooth;
@@ -140,7 +140,7 @@ main {
     right: 0;
 }
 
-#carrossel img {
+#carrossel img, #carrossel1 img {
     width: 220px;
     height: 250px;
     object-fit: cover;

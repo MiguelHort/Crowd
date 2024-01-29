@@ -37,12 +37,12 @@
 
     <main>
         <section id="Restaurantes">
-            <button class="carousel-arrow carousel-arrow--prev" onclick="handleCarouselMove(false)">
+            <button class="carousel-arrow carousel-arrow--prev" onclick="handleCarouselMove(true)">
                 &#8249;
             </button>
             <article id="categoria">
                 <div id="titulo">
-                    <h1>Restaurantes</h1>
+                    <h1>Café</h1>
                 </div>
                 <div id="carrossel">
                     <a href="" class="imagens">
@@ -88,14 +88,14 @@
             </button>
         </section>
         <section id="Restaurantes">
-            <button class="carousel-arrow carousel-arrow--prev" onclick="handleCarouselMove(false)">
+            <button class="carousel-arrow carousel-arrow--prev" onclick="handleCarouselMove(true)">
                 &#8249;
             </button>
             <article id="categoria">
                 <div id="titulo">
                     <h1>Restaurantes</h1>
                 </div>
-                <div id="carrossel">
+                <div id="carrossel1">
                     <a href="" class="imagens">
                         <img src="../img/fotos/Alexandria/alexandria (1).jpg" alt="">
                         <p>Alexandria</p>
@@ -141,13 +141,35 @@
     </main>
 
     <script>
-        const carousel = document.getElementById("carrossel");
-        const slide = document.querySelector(".imagens");
-
         function handleCarouselMove(positive = true) {
-            const slideWidth = slide.clientWidth;
-            carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
+            const carousel = document.getElementById(positive);
+            const slide = document.querySelector(".imagens");
+
+            if (carousel.scrollLeft(positive)) {
+
+                // const slideWidth = slide.clientWidth;
+                carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
+            } else {
+                carousel.scrollLeft = positive ? carousel.scrollRight + slideWidth : carousel.scrollRight - slideWidth;
+            }
         }
+
+        // function rolarEsquerda(qual) {
+        //     const carousel = document.getElementById(qual);
+        //     const slide = document.querySelector(".imagens");
+
+        //     const slideWidth = slide.clientWidth;
+        //     carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
+        // }
+
+        // function rolarDireita(qual) {
+        //     const carousel = document.getElementById(qual);
+        //     const slide = document.querySelector(".imagens");
+
+        //     const slideWidth = slide.clientWidth;
+        //     carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
+        // }
+
     </script>
 
 </body>
